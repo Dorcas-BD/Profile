@@ -21,8 +21,9 @@ function getCurrentDayAndTime() {
   const minutes = currentDate.getUTCMinutes().toString().padStart(2, "0");
   const seconds = currentDate.getUTCSeconds().toString().padStart(2, "0");
 
+  // const userTimeZone = currentDate.getTimezoneOffset();
   currentDay.textContent = `Today is: ${dayOfTheWeek}`;
-  currentUTCTime.textContent = `The time is: ${hours}:${minutes}:${seconds}`;
+  currentUTCTime.textContent = `The time is: ${hours}:${minutes}:${seconds} UTC+1`;
 }
 
 getCurrentDayAndTime();
