@@ -21,8 +21,15 @@ function getCurrentDayAndTime() {
   const minutes = currentDate.getUTCMinutes().toString().padStart(2, "0");
   const seconds = currentDate.getUTCSeconds().toString().padStart(2, "0");
 
+  const period = hours >= 12 ? "PM" : "AM";
+
+  const milliseconds = currentDate
+    .getUTCMilliseconds()
+    .toString()
+    .padStart(3, "0");
+
   currentDay.textContent = `${dayOfTheWeek}`;
-  currentUTCTime.textContent = `${hours}:${minutes}:${seconds}`;
+  currentUTCTime.textContent = `${hours}:${minutes}:${seconds} ${period}`;
 }
 
 getCurrentDayAndTime();
