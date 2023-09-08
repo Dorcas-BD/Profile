@@ -15,7 +15,6 @@ body {
 
 .mySlackProfile {
   max-width: 600px;
-  border: 5px solid rgb(54, 55, 54);
   margin: 25px;
   padding: 70px;
 }
@@ -37,11 +36,11 @@ img {
 p {
   font-size: 18px;
   color: #666;
-  margin-left: 25px;
+  margin-left: 45px;
 }
 
 a {
   text-decoration: none;
   color: #0077cc;
-  margin-left: 25px;
+  margin-left: 45px;
 }
